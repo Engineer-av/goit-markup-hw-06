@@ -619,11 +619,16 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label class="modal-form-field agreement-label">
+          <!-- <label class="modal-form-field agreement-label">
             <input class="checkbox visually-hidden" type="checkbox" name="agreement" />
             <span class="check-icon"></span>
             <span class="modal-form-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a></span>
-          </label>
+          </label> -->
+          <div role="group" class="modal-form-field agreement-label">
+            <input id="checkbox" class="visually-hidden" type="checkbox" name="agreement" />
+            <label for="checkbox" class="modal-form-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия
+              договора</a></label>
+          </div>
           <button class="modal-btn" type="submit">
             Отправить
           </button>
